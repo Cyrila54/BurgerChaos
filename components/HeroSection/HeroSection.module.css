@@ -156,11 +156,8 @@
   }
 }
 
-/* <--------> COMPUTER <--------> */
-@media only screen and (min-width: 1024px) and (max-width: 1199px) {
-}
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1024px) and (min-width: 1200px) {
   .HeroSection {
     padding: 8rem 15rem;
   }

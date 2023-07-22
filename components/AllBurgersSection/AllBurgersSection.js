@@ -11,7 +11,7 @@ export default function AllBurgersSection() {
       name: "Double Beef Burger",
       description:
         "Un burger avec deux galettes de bœuf, du fromage et des légumes frais. Un plaisir pour les amateurs de viande !",
-      price: "19€",
+      price: "10.90€",
       notation: 4.8,
     },
     {
@@ -20,7 +20,7 @@ export default function AllBurgersSection() {
       name: "spicy beef burger",
       description:
         "Un burger épicé avec des galettes de bœuf relevées, des légumes croquants et une sauce spéciale.",
-      price: "19€",
+      price: "8.90€",
       notation: 4.5,
     },
     {
@@ -29,7 +29,7 @@ export default function AllBurgersSection() {
       name: "cheese beef burger",
       description:
         "Un classique avec du bœuf succulent et du fromage fondu. Une explosion de saveurs !",
-      price: "19€",
+      price: "9.90€",
       notation: 5,
     },
     {
@@ -38,7 +38,7 @@ export default function AllBurgersSection() {
       name: "combo cheese beef Burger",
       description:
         "Le combo parfait avec burger, frites et boisson. Un repas complet en une seule commande.",
-      price: "19€",
+      price: "19.90€",
       notation: 4,
     },
   ];
