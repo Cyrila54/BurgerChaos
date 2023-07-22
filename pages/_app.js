@@ -1,11 +1,13 @@
 import '../styles/globals.css';
 import Head from 'next/head';
+import "../styles/fonts.css";
 
 function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Next.js App</title>
+        
+        <title>Étoile d'Or ⭐️</title>
       </Head>
       <Component {...pageProps} />
     </>

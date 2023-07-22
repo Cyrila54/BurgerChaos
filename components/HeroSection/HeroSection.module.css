@@ -1,0 +1,145 @@
+/* <--------> GENERAL <--------> */
+.HeroSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  padding: 4rem;
+  background: url("https://res.cloudinary.com/dwudnu5e3/image/upload/v1690017810/bulles_blanches_transparentes10_dww4p7.png") center center / cover
+      no-repeat,
+    radial-gradient(circle, rgba(181, 54, 54, 1) 0%, rgba(130, 7, 7, 1) 50%);
+}
+
+.leftPart {
+  width: 50%;
+  color: var(--primary-color);
+}
+
+.leftPart h1 {
+  margin-bottom: 1rem;
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-family: "Rowdies", cursive;
+}
+
+.leftPart h4 {
+  font-family: "Ephesis", cursive;
+  font-size: 2.5rem;
+  color: var(--text);
+  transform: rotate(-5deg);
+}
+
+.leftPart p {
+  color: var(--text);
+  font-family: "Kavivanar", cursive;
+  font-size: 1rem;
+}
+
+.rightPart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.rightPart img {
+  width: 70%;
+}
+
+.bottom_deco {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.order_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  margin-top: 2rem;
+  border: 3px solid transparent;
+  border-radius: 5rem;
+  background-color: #ffc108;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  cursor: pointer;
+}
+
+.arrow_order_ico {
+  font-size: 1.4rem;
+  background-color: aliceblue;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+/* <--------> MOBILE <--------> */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .HeroSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    padding: 1rem;
+    padding-top: 5rem;
+  }
+
+  .leftPart,
+  .rightPart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .leftPart h1 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+  }
+
+  .leftPart h4 {
+    font-size: 2rem;
+    margin-bottom: -0.5rem;
+  }
+
+  .leftPart p {
+    font-size: 1rem;
+  }
+
+  .rightPart img {
+    width: 100%;
+  }
+
+  .top_deco img,
+  .bottom_deco img {
+    width: 40%;
+  }
+}
+/* <--------> TABLET <--------> */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .HeroSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    padding: 3rem;
+  }
+
+  .leftPart h1 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+  }
+
+  .rightPart img {
+    width: 100%;
+  }
+}
+
+/* <--------> COMPUTER <--------> */
+@media only screen and (min-width: 1024px) {
+}

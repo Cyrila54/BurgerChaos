@@ -7,4 +7,15 @@ body {
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+
+  --bg-primary:#E8652E;
+  --bg-secondary: #820707;
+  --primary-color: #FFEBB7;
+  --secondary-color:black;
+  --text:#E2A403;
 }
