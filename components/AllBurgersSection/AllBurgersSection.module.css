@@ -1,0 +1,151 @@
+/* <--------> GENERAL <--------> */
+.AllBurgersSection {
+  height: 50vh;
+  background-color: var(--bg-primary);
+}
+
+.family_burgers {
+  width: 100%;
+  padding: 2rem;
+}
+
+.family_burgers ul {
+  display: flex;
+  list-style: none;
+}
+
+.family_burgers ul li {
+  margin-right: 2rem;
+}
+
+.family_burgers ul li a:hover {
+  border-bottom: 2px solid var(--secondary-color);
+}
+.family_burgers ul li a:active {
+  border-bottom: 2px solid var(--secondary-color);
+}
+.family_burgers ul li:first-child {
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+.family_burgers ul li a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-weight: 600;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.1rem;
+}
+
+.mainContent {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.burgers_container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.leftPart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  margin-right: 1rem;
+}
+
+.bg_burger {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background: radial-gradient(
+    circle,
+    rgba(181, 54, 54, 1) 0%,
+    rgba(130, 7, 7, 1) 50%
+  );
+  border-radius: 1rem;
+  height: 60%;
+}
+
+.leftPart img {
+  width: 110%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+}
+
+.rightPart {
+  width: 60%;
+}
+
+.mainContent {
+  width: 50%;
+}
+
+.rightPart h2 {
+  font-size: 1rem;
+  margin-bottom: 0.6rem;
+  color: var(--text);
+  font-family: "Rowdies", cursive;
+  text-transform: uppercase;
+}
+
+.rightPart p {
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.price_And_Notation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.price_And_Notation p:first-child {
+  background: radial-gradient(
+    circle,
+    rgba(181, 54, 54, 1) 0%,
+    rgba(130, 7, 7, 1) 50%
+  );
+  color: var(--primary-color);
+  padding: 0.4rem 1rem;
+  border-radius: 4rem;
+}
+/* <-------l-> MOBILE <--------> */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .rightPart h2 {
+    font-size: 1rem;
+  }
+
+  .mainContent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .leftPart, .rightPart{
+    width: 100%;
+  }
+}
+/* <--------> TABLET <--------> */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+}
+
+/* <--------> COMPUTER <--------> */
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+}
+
+@media only screen and (min-width: 1200px) {
+  .AllBurgersSection {
+    padding: 0 15rem;
+  }
+
+  .leftPart img {
+    width: 110%;
+  }
+
+  .rightPart h2 {
+    font-size: 1.2rem;
+  }
+}

@@ -13,9 +13,9 @@ body {
 
 :root{
 
-  --bg-primary:#E8652E;
+  --bg-primary:aliceblue;
   --bg-secondary: #820707;
   --primary-color: #FFEBB7;
-  --secondary-color:black;
+  --secondary-color:#423e37;
   --text:#f49b15;
 }

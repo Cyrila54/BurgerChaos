@@ -73,5 +73,11 @@
 }
 
 /* <--------> COMPUTER <--------> */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+}
+
+@media only screen and (min-width: 1200px) {
+.header{
+  padding: 0 15rem;
+}
 }
