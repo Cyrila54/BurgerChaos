@@ -61,6 +61,7 @@
   border: 3px solid transparent;
   border-radius: 5rem;
   background-color: #ffc108;
+  color: black;
   font-size: 1rem;
   font-weight: 500;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -73,6 +74,7 @@
   background-color: aliceblue;
   border-radius: 50%;
   margin-right: 0.5rem;
+  color: black;
 }
 
 /* <--------> MOBILE <--------> */
@@ -82,9 +84,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 80vh;
+    height: 90vh;
     padding: 1rem;
-    padding-top: 5rem;
+    padding-top: 2rem;
   }
 
   .leftPart,
@@ -99,11 +101,11 @@
 
   .leftPart h1 {
     margin-bottom: 1rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .leftPart h4 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: -0.5rem;
   }
 
@@ -112,13 +114,10 @@
   }
 
   .rightPart img {
-    width: 100%;
+    width: 80%;
   }
 
-  .top_deco img,
-  .bottom_deco img {
-    width: 40%;
-  }
+
 }
 /* <--------> TABLET <--------> */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
