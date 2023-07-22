@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./AllBurgersSection.module.css";
-import { PiPlusCircleBold} from 'react-icons/pi'
+import { PiPlusCircleBold } from "react-icons/pi";
+import { AiFillStar } from "react-icons/ai";
 
 export default function AllBurgersSection() {
   const burgersList = [
@@ -43,6 +44,11 @@ export default function AllBurgersSection() {
   ];
 
   const burgersMap = burgersList.map((burger, i) => {
+    let notation = [];
+    for (let j = 0; j < burger.notation; j++) {
+      notation.push(<AiFillStar className={styles.starsNotation} />);
+    }
+
     return (
       <div className={styles.mainContent} key={i}>
         <div className={styles.leftPart}>
@@ -54,8 +60,11 @@ export default function AllBurgersSection() {
           <h2>{burger.name}</h2>
           <p>{burger.description}</p>
           <div className={styles.price_And_Notation}>
-            <p><PiPlusCircleBold className={styles.add_ico}/>{burger.price}</p>
-            <p>{burger.notation}</p>
+            <p>
+              <PiPlusCircleBold className={styles.add_ico} />
+              {burger.price}
+            </p>
+            <p>{notation}</p>
           </div>
         </div>
       </div>
