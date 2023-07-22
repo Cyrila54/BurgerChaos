@@ -13,8 +13,9 @@
 .logo h1 {
   margin: 0;
   color: var(--primary-color);
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.667);
 }
 
 .informations {
@@ -53,6 +54,10 @@
   .informations {
     display: none;
   }
+
+  .logo h1 {
+  font-size: 1.2rem;
+}
 }
 /* <--------> TABLET <--------> */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
