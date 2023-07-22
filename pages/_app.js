@@ -7,7 +7,7 @@ function App({ Component, pageProps }) {
     <>
       <Head>
         
-        <title>Étoile d'Or ⭐️</title>
+        <title>Burger Chaos 🍔</title>
       </Head>
       <Component {...pageProps} />
     </>

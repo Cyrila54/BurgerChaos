@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   height: 70vh;
-  padding: 4rem;
+  padding: 6rem;
   background: url("https://res.cloudinary.com/dwudnu5e3/image/upload/v1690017810/bulles_blanches_transparentes10_dww4p7.png") center center / cover
       no-repeat,
     radial-gradient(circle, rgba(181, 54, 54, 1) 0%, rgba(130, 7, 7, 1) 50%);
@@ -26,7 +26,7 @@
   font-family: "Ephesis", cursive;
   font-size: 2.5rem;
   color: var(--text);
-  transform: rotate(-5deg);
+  transform: rotate(-7deg);
 }
 
 .leftPart p {
@@ -141,5 +141,14 @@
 }
 
 /* <--------> COMPUTER <--------> */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px)and (max-width:1199px) {
+
+
+}
+
+@media only screen and (min-width: 1200px) {
+.HeroSection{
+  padding: 10rem;
+}
+
 }
