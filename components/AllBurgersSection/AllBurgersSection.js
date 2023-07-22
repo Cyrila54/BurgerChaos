@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./AllBurgersSection.module.css";
+import { PiPlusCircleBold} from 'react-icons/pi'
 
 export default function AllBurgersSection() {
   const burgersList = [
@@ -10,7 +11,7 @@ export default function AllBurgersSection() {
       description:
         "Un burger avec deux galettes de bœuf, du fromage et des légumes frais. Un plaisir pour les amateurs de viande !",
       price: "19€",
-      notation: 5.5,
+      notation: 4.8,
     },
     {
       image:
@@ -19,7 +20,7 @@ export default function AllBurgersSection() {
       description:
         "Un burger épicé avec des galettes de bœuf relevées, des légumes croquants et une sauce spéciale.",
       price: "19€",
-      notation: 5.5,
+      notation: 4.5,
     },
     {
       image:
@@ -28,7 +29,7 @@ export default function AllBurgersSection() {
       description:
         "Un classique avec du bœuf succulent et du fromage fondu. Une explosion de saveurs !",
       price: "19€",
-      notation: 5.5,
+      notation: 5,
     },
     {
       image:
@@ -37,7 +38,7 @@ export default function AllBurgersSection() {
       description:
         "Le combo parfait avec burger, frites et boisson. Un repas complet en une seule commande.",
       price: "19€",
-      notation: 5.5,
+      notation: 4,
     },
   ];
 
@@ -53,7 +54,7 @@ export default function AllBurgersSection() {
           <h2>{burger.name}</h2>
           <p>{burger.description}</p>
           <div className={styles.price_And_Notation}>
-            <p>{burger.price}</p>
+            <p><PiPlusCircleBold className={styles.add_ico}/>{burger.price}</p>
             <p>{burger.notation}</p>
           </div>
         </div>
