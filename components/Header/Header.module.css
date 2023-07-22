@@ -15,7 +15,7 @@
   color: var(--primary-color);
   font-size: 1.5rem;
   text-transform: uppercase;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.667);
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.372);
 }
 
 .informations {
@@ -56,7 +56,7 @@
   }
 
   .logo h1 {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 }
 /* <--------> TABLET <--------> */
