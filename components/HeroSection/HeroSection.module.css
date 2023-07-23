@@ -97,7 +97,7 @@
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
-.order_btn:active {
+.order_btn:focus, .order_btn:active {
 animation: slideInLeft .5s ease-in;
 }
 
