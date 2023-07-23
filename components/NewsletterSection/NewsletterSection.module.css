@@ -146,6 +146,7 @@
   }
   .email_input input {
     width: 80%;
+    border-radius: 0;
   }
 
   .email_input button {
