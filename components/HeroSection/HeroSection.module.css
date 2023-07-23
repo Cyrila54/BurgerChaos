@@ -20,7 +20,7 @@
   font-size: 4rem;
   text-transform: uppercase;
   font-family: "Rowdies", cursive;
-  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.372);
+  text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.20);
 }
 
 .leftPart h4 {
@@ -121,7 +121,7 @@
   }
 
   .leftPart{
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 
   .leftPart h1 {
@@ -130,7 +130,7 @@
   }
 
   .leftPart h4 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-bottom: -0.5rem;
   }
 
