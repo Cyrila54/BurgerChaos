@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./AllBurgersSection.module.css";
 import { PiPlusCircleBold } from "react-icons/pi";
 import { AiFillStar } from "react-icons/ai";
 
 export default function AllBurgersSection() {
+  const [grilledBurgerSelected, setGrilledBurgerSelected] = useState(true);
+  const [chickenBurgerSelected, setChickenBurgerSelected] = useState(false);
+  const [dessertSelected, setDessertSelected] = useState(false);
+
   const grilledBurgersList = [
     {
       image:
@@ -35,7 +39,7 @@ export default function AllBurgersSection() {
     {
       image:
         "https://res.cloudinary.com/dwudnu5e3/image/upload/v1690086461/BurgerChaos/MenuBurger-min_sbn2ub.png",
-      name: "combo cheese beef Burger",
+      name: "Supreme Meal",
       description:
         "Le combo parfait avec burger, frites et boisson. Un repas complet en une seule commande.",
       price: "19.90€",
@@ -71,13 +75,22 @@ export default function AllBurgersSection() {
       price: "9.90€",
       notation: 4,
     },
+    {
+      image:
+        "https://res.cloudinary.com/dwudnu5e3/image/upload/v1690096763/BurgerChaos/chickenWings-min_kki9n7.png",
+      name: "Chicken Wings",
+      description:
+        "Des ailes de poulet croustillantes et savoureuses, marinées dans des épices exquises pour une explosion de saveurs à chaque bouchée.",
+      price: "9.90€",
+      notation: 4,
+    },
   ];
 
-  const otherList = [
+  const dessertsList = [
     {
       image:
         "https://res.cloudinary.com/dwudnu5e3/image/upload/v1690091653/BurgerChaos/ChocolateCake-min_f4fhuq.png",
-      name: "Gateâu chocolat maison",
+      name: "Gâteau chocolat",
       description:
         "Un délicieux gâteau au chocolat fait maison qui fond dans la bouche, une vraie gourmandise !",
       price: "5.90€",
@@ -87,8 +100,7 @@ export default function AllBurgersSection() {
       image:
         "https://res.cloudinary.com/dwudnu5e3/image/upload/v1690091653/BurgerChaos/GourmetCoffee-min_x250tu.png",
       name: "Café gourmand",
-      description:
-        "Un café gourmand accompagné de petits plaisirs...",
+      description: "Un café gourmand accompagné de petits plaisirs...",
       price: "6.90€",
       notation: 4.5,
     },
@@ -101,9 +113,16 @@ export default function AllBurgersSection() {
       price: "4.90€",
       notation: 4,
     },
+    {
+      image:
+        "https://res.cloudinary.com/dwudnu5e3/image/upload/v1690096745/BurgerChaos/Bavarois-min_eswssi.png",
+      name: "Bavarois fraise",
+      description:
+        "Découvrez le délice du Bavarrois à la fraise, une pâtisserie légère et raffinée.",
+      price: "4.90€",
+      notation: 5,
+    },
   ];
-
-
 
   const grilledBurgersMap = grilledBurgersList.map((burger, i) => {
     let notation = [];
@@ -159,7 +178,7 @@ export default function AllBurgersSection() {
       </div>
     );
   });
-  const othersMap = otherList.map((burger, i) => {
+  const dessertsMap = dessertsList.map((burger, i) => {
     let notation = [];
     for (let j = 0; j < burger.notation; j++) {
       notation.push(<AiFillStar className={styles.starsNotation} />);
@@ -187,24 +206,52 @@ export default function AllBurgersSection() {
     );
   });
 
+  const handleActiveGrilledBurgers = () => {
+    setGrilledBurgerSelected(true);
+    setChickenBurgerSelected(false);
+    setDessertSelected(false);
 
+  };
+  const handleActiveChickenBurgers = () => {
+    setGrilledBurgerSelected(false);
+    setChickenBurgerSelected(true);
+    setDessertSelected(false);
+  };
+  const handleActiveDesserts = () => {
+    setGrilledBurgerSelected(false);
+    setChickenBurgerSelected(false);
+    setDessertSelected(true);
+  };
 
   return (
     <div className={styles.AllBurgersSection}>
       <div className={styles.family_burgers}>
         <ul>
-          <li>
-            <a href="http://">Grilled Burgers</a>
+          <li
+            onClick={() => handleActiveGrilledBurgers()}
+            className={grilledBurgerSelected ? styles.active : ""}
+          >
+            Grilled Burgers
           </li>
-          <li>
-            <a href="http://">Chicken Burgers</a>
+          <li
+            onClick={() => handleActiveChickenBurgers()}
+            className={chickenBurgerSelected ? styles.active : ""}
+          >
+            Chicken Burgers
           </li>
-          <li>
-            <a href="http://">Desserts</a>
+          <li
+            onClick={() => handleActiveDesserts()}
+            className={dessertSelected ? styles.active : ""}
+          >
+            Desserts
           </li>
         </ul>
       </div>
-      <div className={styles.burgers_container}>{othersMap}</div>
+      <div className={styles.burgers_container}>
+        {grilledBurgerSelected && grilledBurgersMap}
+        {chickenBurgerSelected && chickenBurgersMap}
+        {dessertSelected && dessertsMap}
+      </div>
     </div>
   );
 }

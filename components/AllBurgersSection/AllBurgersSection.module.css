@@ -18,31 +18,29 @@
   list-style: none;
 }
 
+.family_burgers ul li:hover {
+  border-bottom: 2px solid var(--secondary-color);
+}
+.active {
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+
 .family_burgers ul li {
-  margin-right: 2rem;
-}
-
-.family_burgers ul li a:hover {
-  border-bottom: 2px solid var(--secondary-color);
-}
-.family_burgers ul li a:active {
-  border-bottom: 2px solid var(--secondary-color);
-}
-.family_burgers ul li:first-child {
-  border-bottom: 2px solid var(--secondary-color);
-}
-
-.family_burgers ul li a {
   text-decoration: none;
   color: var(--secondary-color);
   font-weight: 600;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 1.1rem;
+  margin-right: 2rem;
+  cursor: pointer;
 }
 
 .mainContent {
   display: flex;
   width: 50%;
+  animation: slideInLeft .5s ease-in-out;
+
 }
 
 .burgers_container {
@@ -130,6 +128,18 @@
   color: #f49b15;
   font-size: 1.1rem;
 }
+
+    @keyframes slideInLeft {
+  0% {
+  -webkit-transform: translateX(-200%);
+  transform: translateX(-200%);
+  visibility: visible;
+  }
+  100% {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  }
+  } 
 /* <-------l-> MOBILE <--------> */
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   .rightPart h2 {
@@ -142,6 +152,9 @@
     width: 100%;
     margin-bottom: 3rem;
   }
+
+
+
 
   .burgers_container {
     padding: 2rem;
