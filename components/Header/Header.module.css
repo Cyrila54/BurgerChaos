@@ -23,7 +23,6 @@
   align-items: center;
   justify-content: center;
   color: var(--primary-color);
-
 }
 
 .informations a {
@@ -56,8 +55,8 @@
   }
 
   .logo h1 {
-  font-size: 1.4rem;
-}
+    font-size: 1.4rem;
+  }
 }
 /* <--------> TABLET <--------> */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -65,19 +64,16 @@
     padding: 0 1rem;
   }
 
-.informations a, .ico{
-  font-size: 1rem;
-}
-
-
+  .informations a,
+  .ico {
+    font-size: 1rem;
+  }
 }
 
 /* <--------> COMPUTER <--------> */
-@media only screen and (min-width: 1024px) and (max-width: 1199px) {
-}
 
-@media only screen and (min-width: 1200px) {
-.header{
-  padding: 0 15rem;
-}
+@media only screen and (min-width: 1024px) {
+  .header {
+    padding: 0 15rem;
+  }
 }

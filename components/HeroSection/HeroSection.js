@@ -12,15 +12,17 @@ export default function HeroSection() {
           Délicieux
         </h1>
         <p>
-          Un délicieux burger fait à partir de bœuf français de haute
-          qualité, soigneusement transformé pour créer un goût juteux et
-          savoureux.
+          Un délicieux burger fait à partir de bœuf français de haute qualité,
+          soigneusement transformé pour créer un goût juteux et savoureux.
         </p>
-        <button className={styles.order_btn}><BsArrowRightShort className={styles.arrow_order_ico}/>Commander maintenant</button>
+        <button className={styles.order_btn}>
+          <BsArrowRightShort className={styles.arrow_order_ico} />
+          Commander maintenant
+        </button>
       </div>
       <div className={styles.rightPart}>
         <img
-          src="https://res.cloudinary.com/dwudnu5e3/image/upload/v1690011842/original_burger-min_bzfapd.png"
+          src="https://res.cloudinary.com/dwudnu5e3/image/upload/v1690086461/BurgerChaos/originalBurger-min_fvqrsb.png"
           alt=""
         />
       </div>
