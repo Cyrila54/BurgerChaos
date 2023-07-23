@@ -45,7 +45,8 @@ export default function AllBurgersSection() {
 
   const chickenBurgersList = [
     {
-      image: "burgers/1.png",
+      image:
+        "https://res.cloudinary.com/dwudnu5e3/image/upload/v1690091653/BurgerChaos/ChickenBurgerCream-min_dxitwg.png",
       name: "Chicken Burger Cream",
       description:
         "Un burger crémeux et délicieux avec des galettes de poulet tendres, des légumes frais et une sauce spéciale.",
@@ -53,7 +54,8 @@ export default function AllBurgersSection() {
       notation: 4.8,
     },
     {
-      image: "burgers/2.png",
+      image:
+        "https://res.cloudinary.com/dwudnu5e3/image/upload/v1690091654/BurgerChaos/TendersBox-min_so6wcl.png",
       name: "Tenders box",
       description:
         "De véritables morceaux de poulet tendres et savoureux, des légumes croquants et une sauce spéciale.",
@@ -61,7 +63,8 @@ export default function AllBurgersSection() {
       notation: 4.5,
     },
     {
-      image: "burgers/4.png",
+      image:
+        "https://res.cloudinary.com/dwudnu5e3/image/upload/v1690091653/BurgerChaos/ChickenBurgerClassic-min_qga48b.png",
       name: "Chicken Burger Classic",
       description:
         "Un classique délicieux avec du poulet succulent et du fromage fondu. Un goût unique !",
@@ -72,26 +75,29 @@ export default function AllBurgersSection() {
 
   const otherList = [
     {
-      image: "burgers/2.png",
+      image:
+        "https://res.cloudinary.com/dwudnu5e3/image/upload/v1690091653/BurgerChaos/ChocolateCake-min_f4fhuq.png",
       name: "Gateâu chocolat maison",
       description:
-        "Un burger crémeux et délicieux avec des galettes de poulet tendres, des légumes frais et une sauce spéciale.",
+        "Un délicieux gâteau au chocolat fait maison qui fond dans la bouche, une vraie gourmandise !",
       price: "5.90€",
       notation: 4.8,
     },
     {
-      image: "burgers/3.png",
+      image:
+        "https://res.cloudinary.com/dwudnu5e3/image/upload/v1690091653/BurgerChaos/GourmetCoffee-min_x250tu.png",
       name: "Café gourmand",
       description:
-        "De véritables morceaux de poulet tendres et savoureux, des légumes croquants et une sauce spéciale.",
+        "Un café gourmand accompagné de petits plaisirs...",
       price: "6.90€",
       notation: 4.5,
     },
     {
-      image: "burgers/4.png",
+      image:
+        "https://res.cloudinary.com/dwudnu5e3/image/upload/v1690091653/BurgerChaos/CoffeeCupecake-min_ka4nbg.png",
       name: "CupeCake café",
       description:
-        "Un classique délicieux avec du poulet succulent et du fromage fondu. Un goût unique !",
+        "Un délicieux cupcake au café avec des petits éclats de noisettes. un régale !",
       price: "4.90€",
       notation: 4,
     },

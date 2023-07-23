@@ -106,7 +106,7 @@
     justify-content: center;
     height: 80vh;
     padding: 1rem;
-    padding-top: 3rem;
+    padding-top: 2rem;
 
   }
 
@@ -118,6 +118,10 @@
     align-items: center;
     width: 100%;
     text-align: center;
+  }
+
+  .leftPart{
+    margin-bottom: 3rem;
   }
 
   .leftPart h1 {
@@ -135,7 +139,7 @@
   }
 
   .rightPart img {
-    width: 80%;
+    width: 90%;
   }
 }
 /* <--------> TABLET <--------> */
