@@ -13,6 +13,31 @@
 .leftPart {
   width: 50%;
   color: var(--primary-color);
+  animation: slideInLeft 1s;
+}
+
+@keyframes slideInLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
 }
 
 .leftPart h1 {
@@ -20,7 +45,7 @@
   font-size: 4rem;
   text-transform: uppercase;
   font-family: "Rowdies", cursive;
-  text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.20);
+  text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
 }
 
 .leftPart h4 {
@@ -41,6 +66,7 @@
   justify-content: center;
   align-items: center;
   width: 50%;
+  animation: slideInRight 1s;
 }
 
 .rightPart img {
@@ -57,7 +83,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: .7rem 1rem;
+  padding: 0.7rem 1rem;
   margin-top: 2rem;
   border: 3px solid transparent;
   border-radius: 5rem;
@@ -87,6 +113,8 @@
   border: 1px solid #e15e2a;
 }
 
+
+
 .arrow_order_ico {
   font-size: 1.4rem;
   background-color: aliceblue;
@@ -96,23 +124,6 @@
   border: 1px solid #e15e2a;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
-
-.order_btn:focus, .order_btn:active {
-animation: slideInLeft .5s ease-in;
-}
-
- @keyframes slideInLeft {
-  0% {
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
-  visibility: visible;
-  }
-  100% {
-  -webkit-transform: translateX(200%);
-  transform: translateX(200%);
-  }
-  }
-
 
 /* <--------> MOBILE <--------> */
 @media only screen and (min-width: 320px) and (max-width: 767px) {
@@ -124,7 +135,6 @@ animation: slideInLeft .5s ease-in;
     height: 85vh;
     padding: 1rem;
     padding-top: 2rem;
-
   }
 
   .leftPart,
@@ -137,7 +147,7 @@ animation: slideInLeft .5s ease-in;
     text-align: center;
   }
 
-  .leftPart{
+  .leftPart {
     margin-bottom: 2rem;
   }
 
@@ -179,7 +189,6 @@ animation: slideInLeft .5s ease-in;
   }
 }
 
-
 @media only screen and (min-width: 1024px) and (min-width: 1200px) {
   .HeroSection {
     padding: 8rem 15rem;
@@ -194,7 +203,7 @@ animation: slideInLeft .5s ease-in;
     padding: 0.6rem 1rem;
   }
 
-    .rightPart img {
+  .rightPart img {
     width: 120%;
   }
 }
