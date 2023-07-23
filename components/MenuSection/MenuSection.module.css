@@ -6,12 +6,12 @@
   cursor: pointer;
 }
 
-.menu ul {
+.menu nav ul {
   display: flex;
   list-style: none;
 }
 
-.menu ul li {
+.menu nav ul li {
   margin-right: 1rem;
   color: var(--primary-color);
   text-transform: uppercase;

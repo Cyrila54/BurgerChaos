@@ -243,7 +243,7 @@ export default function AllBurgersSection() {
             onClick={() => handleActiveDesserts()}
             className={dessertSelected ? styles.active : ""}
           >
-            Desserts
+            Desserts & Autres
           </li>
         </ul>
       </div>

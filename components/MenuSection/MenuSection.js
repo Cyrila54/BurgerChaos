@@ -5,11 +5,13 @@ import { GiHamburger } from "react-icons/gi";
 export default function MenuSection() {
   const menuList = (
     <div className={styles.menu}>
-      <ul>
-        <li>Home</li>
-        <li>Menu</li>
-        <li>Contact</li>
-      </ul>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>Menu</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
     </div>
   );
 
