@@ -8,6 +8,9 @@
   padding: 0 2rem;
   height: 8vh;
   border-bottom: 1px solid #aaaaaa9c;
+  position: fixed;
+  top: 0;
+  z-index: 999;
 }
 
 .logo h1 {
