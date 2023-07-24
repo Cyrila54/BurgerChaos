@@ -6,7 +6,7 @@ function App({ Component, pageProps }) {
     <>
       <Head>
         
-        <title>Burger Chaos 🍔</title>
+        <title>Crazy Burger 🍔</title>
       </Head>
       <Component {...pageProps} />
     </>

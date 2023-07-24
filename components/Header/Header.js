@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.logo}>
-        <h1>Burger Chaos</h1>
+        <h1>Crazy Burger</h1>
       </div>
       <div className={styles.menu}>
         <MenuSection />

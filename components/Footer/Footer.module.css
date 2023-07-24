@@ -1,0 +1,21 @@
+.footer_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+  height: 10vh;
+  width: 100%;
+  background-color: #f2a42e;
+  font-weight: 500;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+}
+
+.footer_container span {
+  color: aliceblue;
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: "Rowdies", cursive;
+  cursor: pointer;
+}

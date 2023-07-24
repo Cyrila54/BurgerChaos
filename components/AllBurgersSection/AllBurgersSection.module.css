@@ -39,7 +39,7 @@
 .mainContent {
   display: flex;
   width: 50%;
-  animation: slideInLeft .5s ease-in-out;
+  animation: slideInLeft .75s ease-in-out;
 
 }
 
@@ -88,6 +88,7 @@
   color: var(--text);
   font-family: "Rowdies", cursive;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .rightPart p {

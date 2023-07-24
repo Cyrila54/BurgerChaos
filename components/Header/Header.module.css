@@ -13,10 +13,11 @@
 
 .logo h1 {
   margin: 0;
-  color: var(--primary-color);
+  color: #f2a42e;
   font-size: 1.5rem;
   text-transform: uppercase;
-  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.372);
+      font-family: "Rowdies", cursive;
+
 }
 
 .informations {

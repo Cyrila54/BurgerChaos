@@ -1,0 +1,133 @@
+/* <--------> GENERAL <--------> */
+
+.categorySection_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 15rem;
+  background-color: aliceblue;
+  background-image: url("/free.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem 1rem;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "meals burgers specialities"
+    "desserts drinks drinks";
+}
+
+.meals,
+.burgers,
+.specialities,
+.drinks,
+.desserts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.5rem;
+  height: 15rem;
+  width: 15rem;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 15px black;
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: "Rowdies", cursive;
+  cursor: pointer;
+  border: 1px solid white;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.burgers {
+  grid-area: burgers;
+  background: url("https://res.cloudinary.com/dwudnu5e3/image/upload/v1690128597/meals_ejkitr.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.meals {
+  grid-area: meals;
+  background: url("https://res.cloudinary.com/dwudnu5e3/image/upload/v1690128599/burgers_i0xnxs.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.specialities {
+  grid-area: specialities;
+  background: url("https://res.cloudinary.com/dwudnu5e3/image/upload/v1690128598/specialities_jt2oag.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.desserts {
+  grid-area: desserts;
+  background: url("https://res.cloudinary.com/dwudnu5e3/image/upload/v1690128601/desserts_upk9ck.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.drinks {
+  grid-area: drinks;
+  background: url("https://res.cloudinary.com/dwudnu5e3/image/upload/v1690128846/drinks_givrku.png");
+  height: 15rem;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* <--------> MOBILE <--------> */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .categorySection_container {
+    padding: 1rem 1rem;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem 1rem;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "meals burgers"
+      "specialities desserts"
+      "drinks drinks";
+  }
+
+  .meals,
+  .burgers,
+  .specialities,
+  .drinks,
+  .desserts {
+    height: 10rem;
+    width: 10rem;
+    font-size: 1.3rem;
+  }
+
+  .drinks {
+    height: 10rem;
+    width: 100%;
+  }
+}
+/* <--------> TABLET <--------> */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+/* <--------> COMPUTER <--------> */
+@media only screen and (min-width: 1024px) {
+}
