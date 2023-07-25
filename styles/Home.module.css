@@ -1,0 +1,38 @@
+/* <--------> GENERAL <--------> */
+
+.img_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://res.cloudinary.com/dwudnu5e3/image/upload/v1690223303/landing_rdqcxb.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  color: aliceblue;
+  font-family: "Kavivanar", cursive;
+  font-size: 6rem;
+  font-weight: 800;
+  padding: 10rem;
+  text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* <--------> MOBILE <--------> */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .img_container {
+    font-size: 3rem;
+    padding: 2rem;
+  }
+}
+/* <--------> TABLET <--------> */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .img_container {
+    font-size: 4rem;
+    padding: 2rem;
+  }
+
+}
+
+/* <--------> COMPUTER <--------> */
+@media only screen and (min-width: 1024px) {
+}

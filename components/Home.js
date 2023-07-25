@@ -14,6 +14,9 @@ function Home() {
         <AllBurgersSection/>
         <NewsletterSection/>
         <CategorySection/>
+        <div className={styles.img_container}>
+          <p>Venez découvrir notre nouveau restaurant ! 🍔</p>
+        </div>
         <Footer/>
     </div>
   );

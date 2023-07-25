@@ -11,6 +11,7 @@ export default function CategorySection() {
             <div className={styles.desserts}>Desserts</div>
             <div className={styles.drinks}>Boissons & Café</div>
         </div>
+  
     </div>
   )
 }
