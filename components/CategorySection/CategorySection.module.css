@@ -36,7 +36,7 @@
   height: 15rem;
   width: 15rem;
   text-transform: uppercase;
-  text-shadow: 3px 3px 15px black;
+  text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
   color: var(--primary-color);
   font-size: 1.8rem;
   font-weight: 700;
@@ -44,6 +44,14 @@
   cursor: pointer;
   border: 1px solid white;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.meals:hover,
+.burgers:hover,
+.specialities:hover,
+.drinks:hover,
+.desserts:hover {
+  text-decoration: underline;
 }
 
 .burgers {
@@ -116,7 +124,7 @@
   .desserts {
     height: 10rem;
     width: 10rem;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 
   .drinks {
