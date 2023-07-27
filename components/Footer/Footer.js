@@ -12,8 +12,14 @@ export default function Footer() {
         </div>
       </div>
       <div className={styles.textFooter}>
-        <p>contactez-nous</p>
+        <p>
+          Le site <span>Crazy Burger</span> est un modèle original de site
+          e-commerce créé et inventé par Cyril ANDRIQUE.
+          <br /> Toute reproduction est interdite.
+        </p>
+        
       </div>
+      <div className={styles.contactUs}>contactez-nous</div>
 
       <div className={styles.cards}>
         Paiement accepté
